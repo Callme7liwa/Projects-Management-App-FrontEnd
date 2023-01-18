@@ -1,0 +1,174 @@
+.page-container {
+    position: relative;
+    width: 100%;
+    row-gap: 15px;
+    justify-content: center;
+    /* overflow-x: hidden; */
+
+}
+
+.page-container .page-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    left:calc(4% + 220px);
+    top: 3px;
+    height: 100%;
+    padding: 29px;
+    
+    /* padding: 20px 0px; */
+}
+
+.page-main .page-main-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    left: 0%;
+    width: 100%;
+
+
+}
+
+.page-main-content  .content-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 140px;
+    height: 160px;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.content-card div:first-child {
+    position: relative;
+    width: 100%;
+    height:120px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 120px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.content-card .n-empty {
+    font-size:46px;
+    font-weight: 900;
+}
+
+.content-card div:first-child i {
+    font-weight: 0;
+}
+
+.content-card div:last-child{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.content-card .empty {
+    background-color: #292929;
+    font-size: 20px;
+    transition: all 0.2s ease;
+}
+
+.content-card .empty:hover {
+     background-color: antiquewhite;
+     color: black;
+}
+
+
+.page-add-employe-container .page-categories-content{
+    position: relative;
+    width: 350px;
+    background-color: #292929;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+
+.page-add-employe-container .page-categories-content .page-header {
+    position: relative;
+    padding: 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.page-add-employe-container .page-categories-content .page-body {
+    position: relative;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.page-add-employe-container .page-categories-content .page-body .form-group {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito";
+    justify-content: center;
+}
+
+.page-add-employe-container .page-categories-content .page-body .form-group label {
+    font-size: 13px;
+    padding-left: 4px;
+}
+
+.page-add-employe-container .page-categories-content .page-body .form-group input {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: wheat;
+    font-family: 'Nunito', sans-serif;
+}
+
+.page-add-employe-container .page-categories-content  .page-footer {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.page-add-employe-container .page-categories-content  .page-footer span {
+    position: relative;
+    width: 90%;
+    font-size: 13px;
+    font-family: "Nunito";
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(21, 178, 66);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.page-add-employe-container .page-categories-content  .page-footer span:hover {
+    background-color: rgb(16, 135, 49);
+
+}
+
+.page-add-employe-container .page-categories-content  .page-footer span
+
+.page-add-employe-container .page-categories-content  .page-footer span i {
+    font-size: 9px;
+}

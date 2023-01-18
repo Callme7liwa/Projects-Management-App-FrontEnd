@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto:wght@100;300&display=swap');
+.navbar-container {
+    position: relative;
+    width: 100%;
+    min-height: 7vh;
+    display: flex;
+    justify-content: center;
+    /* background-color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(216, 216, 215, 0.922); */
+    overflow: hidden;
+}
+
+.navbar-container.unauthenticated {
+    background-color: #F7F7F7;
+
+}
+
+.navbar-container .navbar-bars {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translateY(-60%);
+    color: black;
+    cursor: pointer;
+}
+
+
+.navbar-container .navbar-content {
+    position: relative;
+    width: 62%;
+    height: 100%;
+    display: flex;
+}
+
+.navbar-container .navbar-content  .content-logo  {
+    position: relative;
+    width: 32%;
+}
+
+.navbar-container .navbar-content  .content-logo span {
+    position: absolute;
+    left: 0;
+    font-size: 23px;
+    text-transform: uppercase;
+    align-items: center;
+    top: 10%;
+}
+
+.navbar-container .navbar-content .navbar-input {
+    position: relative;
+    width: 42%;
+    display: flex;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-container .navbar-content .navbar-input input{
+    position: absolute;
+    width: 70%;
+    padding: 5px 10px;
+    border: 10px;
+    left: 0;
+    font-size: 14px;
+    background-color: rgba(153, 153, 153, 0.406);
+    color: black;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.navbar-items-container {
+    position: absolute;
+    right: 0;
+    width: 26%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container .navbar-items {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    column-gap: 25px;
+}
+
+.navbar-container .navbar-items .navbar-item {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.navbar-container .navbar-items .navbar-item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navbar-container .navbar-items .navbar-item .fa {
+    font-size: 25px;
+}
+
+ .navbar-actions {
+    position: absolute;
+    top: -40vh;
+    right :10%;
+    width: 220px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;     
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999999;
+    transition: all 0.5s ease;
+}
+
+.navbar-actions.active {
+    top: 8vh ;
+}
+
+.navbar-actions .action-items {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 10px;
+    padding: 10px 0px;
+    row-gap: 10px;
+    list-style: none;
+    padding: 0px 10px;
+}
+
+.navbar-actions .action-items .action-item {
+    position: relative;
+    display: flex;
+    left: 0;
+    width: 100%;
+    padding: 7px 0px;
+}
+
+.navbar-actions .action-items .action-item:last-child{
+    border-top: 2px solid rgba(228, 220, 220, 0.87);
+    padding-bottom: 20px;
+}
+
+.navbar-actions .action-items .action-item a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+.navbar-actions .action-items .action-item a {
+    margin-left: 2vh;
+}
+
+
+
+
+
+/******************* New One *** */
+
+.item{
+    cursor: pointer;
+    color: #999;
+    transition: all 0.5s ease;
+}
+
+.item:hover {
+    color: black;
+}
+

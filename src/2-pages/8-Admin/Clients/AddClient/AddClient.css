@@ -1,0 +1,152 @@
+.page-add-client .page-add-employe-content {
+    width: 400px;
+    min-height: 400px;
+}
+
+.page-add-client .page-add-employe-content .page-body {
+    top: 0vh;
+}
+
+.button-submit {
+    padding-bottom: 10px;
+}
+
+.request-result-client {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(41, 40, 49);
+    border-radius: 10px;
+    top: 3vh;
+    right: 400px;
+    z-index: 191919191;
+}
+
+.request-result .result {
+    position: relative;
+    background-color: #292929;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.request-result .result span {
+    color:wheat;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.request-result .body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 20px;
+}
+
+.request-result .body .body-result-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.request-result .body .body-result-icon  i {
+    background-image: linear-gradient(to top , #270993,#270993,#270993 ,#3e15d2,#441bd8,#4318de,#4a1fe8,#4f25e9,#461cdf,#552ce9 ,#270993,#270993,#270993 );
+    color: wheat;
+}
+
+.request-result .body .body-message span {
+    display: flex;
+    text-align: center;
+}
+
+.request-result .body .body-message span {
+    color: wheat;
+}
+
+.request-result .body .body-footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to left , #270993,#270993,#270993 ,#3e15d2,#552ce9 ,#270993,#270993,#270993 );
+    border-radius: 10px;
+    height: 3vh;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/* .request-result .body .body-footer span {
+    position: relative;
+    width: 40px ;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+    color: wheat;
+    font-size: 14px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} */
+
+.submit-add-client {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: white;
+    background-image: linear-gradient(to right , #270993,#270993,#270993 ,#310eb1,#310eb1,#310eb1,#310eb1,#270993,#270993,#270993  );
+    cursor: pointer;
+    transition: all 0.1s ease;
+    font-size: 14px;
+    padding: 4px;
+    font-family: "Nunito";
+}
+
+.page-body .form-group .image-selected-container {
+    position: relative;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.page-body .form-group .image-selected-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border: 4px solid #310eb1;
+    border-radius: 50%;
+}
+
+
+.page-body .form-group .image-selected-container i {
+    position: absolute;
+    top: 7px;
+    right: -7px;
+    z-index: 100;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+    width: 20px;
+    height: 20px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 20px;
+    background-color: #1740e4;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.page-body .form-group .image-selected-container i:hover {
+    background-color: white;
+    color: black;
+}

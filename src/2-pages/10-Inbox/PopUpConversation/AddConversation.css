@@ -1,0 +1,200 @@
+:root{
+    --box-shadow-1 :  rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.pop-up-add-conversation.pop-up-add-task-container  {
+    position: fixed;
+    margin-top: 18.5vh;
+}
+
+.pop-up-add-conversation .pop-up-add-conversation-content {
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--box-shadow-1);
+}
+.pop-up-add-conversation .pop-up-add-conversation-content .content-header {
+    background-color: rgb(49, 47, 46);
+}
+
+.pop-up-add-conversation .pop-up-add-conversation-content .content-header .badge{
+    background-color: rgba(255, 255, 251, 0.793);
+}
+
+/* ************ POP UP ADD PROJECT TO CONVERSATION  ************  */
+
+.pop-up-add-project-conversation{
+    font-family: 'Bebas Neue', cursive;
+    z-index: 99999999999;
+}
+
+.pop-up-add-project-conversation .pop-up-add-project-conversation-content{
+    background-color: aliceblue;
+}
+
+.pop-up-add-project-conversation .pop-up-add-project-conversation-content .content-header{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #292929;
+}
+.pop-up-add-project-conversation .pop-up-add-project-conversation-content .content-header .badge {
+    background-color: aliceblue;
+}
+
+.pop-up-add-project-conversation-content .error-message {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.pop-up-add-project-conversation-content .content-body-conversation {
+    row-gap: 10px;
+}
+.content-body .title-conversation {
+    font-size: 19px;
+}
+
+.content-body-conversation  .list-projects {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.content-body-conversation  .list-projects  .project-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    min-width: 30%;
+    border-radius: 5px;
+    background-color: rgba(160, 160, 168, 0.6);
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-height: 100px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.content-body-conversation  .list-projects  .project-container.active{
+    background-color: rgb(114, 254, 44);
+}
+
+
+.content-body-conversation  .list-projects  .project-container.not-active{
+    background-color: red;
+    cursor: not-allowed;
+}
+
+
+
+.content-body-conversation  .list-projects  .project-container:hover {
+    background-color: #2929297c;
+}
+
+.content-body-conversation  .list-projects  .project-container .project-number{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-body-conversation  .list-projects  .project-container .project-number span {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #292929;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    font-size: 24px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-weight: 900;
+    background-color: #292929;
+    color: white;
+}
+
+.content-body-conversation  .list-projects  .project-container.active .project-number  span{
+    background-color: #292929;
+    color: wheat;
+}
+
+.content-body-conversation  .project-validation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-body-conversation  .project-validation .submit {
+    padding: 5px 10px;
+    color: #292929;
+    background-color: rgb(114, 254, 44) ;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pop-up-add-conversation-content .content-body {
+    margin-top: 5vh;
+}
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+
+.pop-up-add-conversation-content .content-body .form-group {
+    position: relative;
+    width: 100%;
+    font-family: "Raleway";
+}
+
+.pop-up-add-conversation-content .content-body .form-group label {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pop-up-add-conversation-content .content-body .form-group input {
+    position: relative;
+    width: 100%;
+    outline: none;
+    border: none;
+    box-shadow: var(--box-shadow-1);
+    border-radius: 10px;
+}
+
+.pop-up-add-conversation-content .content-body .form-group .submit {
+    position: absolute;
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    /* background-color: rgb(114, 254, 44) ; */
+    background-color: #292929;
+    color: wheat;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+}
+
+.content-body .form-group .selected {
+    position: absolute;
+    background-color: #292929;
+    border-radius: 5px;
+    color: wheat;
+    top: 40px;
+    left: 3%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.content-body .form-group .selected span .fa-times-circle-o:hover{
+    color: red;
+}

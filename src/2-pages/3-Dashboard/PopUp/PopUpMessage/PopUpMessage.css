@@ -1,0 +1,19 @@
+.pop-up-message-container {
+    position: fixed;
+    top: -7vh;
+    width: 100% ; 
+    height: calc(100% + 7vh);
+    background-color: rgba(0, 0, 0, 0.449);
+    z-index: 999992992929;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-up-message-container .pop-up-message-content {
+    position: relative;
+    width: 400px;
+    min-height: 400px;
+    background-color: azure;
+    border-radius: 5px;
+}

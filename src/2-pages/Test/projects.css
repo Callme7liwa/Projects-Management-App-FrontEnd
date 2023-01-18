@@ -1,0 +1,101 @@
+.project-card{
+    width: 300px;
+    background-color: #F54423;
+    min-height: 300px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color:  var(--c)
+}
+
+.page-container .page-main{
+    width: 69%;
+}
+
+.c {color:  var(--c)}
+.m {margin: var(--m)}
+
+/* .project-card .project-card-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-align: center;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    background-color: rgba(150, 156, 156, 0.237);
+}
+
+.project-card .project-respo {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.project-card .project-text {
+    padding: 0 10px;
+    font-size: 14px;
+    color: azure;
+}
+
+.project-card .project-respo span {
+    color:black;
+    font-weight: bold;
+}
+
+.project-card .project-team {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    font-size: 14px;
+}
+
+.project-card .project-team .team-projects-pics {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+}
+
+.project-card .project-team .team-projects-pics .pic {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.project-card .project-team .team-projects-pics .pic img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+.project-card .project-details-button {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+}
+
+.project-card .project-details-button button{
+    position: relative;
+    width: 80%;
+    border: none;
+    outline: none;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 7px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;} */

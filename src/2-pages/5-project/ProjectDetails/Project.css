@@ -1,0 +1,959 @@
+
+.page-main .nav-tab{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2px;
+    list-style: none;
+}
+
+.nav-tab .nav-item{
+    position: relative;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    background-color: #292929;
+    text-align: center;
+    align-items: center;
+    line-height: 5vh;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.nav-tab .nav-item.active{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.page-line-commun {
+    position: absolute;
+    top: 5vh;
+    width: 3px;
+    height: 50px;
+    background-color: black;
+    transition: all 0.2s ease;
+}
+
+.page-main .page-line{
+    top: 5vh;
+}
+
+.page-line-commun.left {
+    left:calc(1 * 16.6%);
+}
+
+.page-line-commun.center {
+    left:calc(3 * 16.6%);
+}
+
+.page-line-commun.right {
+    left:calc(5 * 16.6%);
+}
+
+.page-main .page-content {
+    position: relative;
+    width: 100%;
+    /* min-height: calc(100vh - calc(50px + 5vh + 7vh)) ; */
+    top: calc(50px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    border-radius: 5px;
+    background-color: none;
+    padding: 10px;
+    /* min-height: 100vh; */
+
+}
+
+.task-header-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.task-header-container .task-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.task-header .task{
+    position: relative;
+    display: flex;
+    width: 200px;
+    min-height: 150px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background-color: #292929;
+}
+
+.task-header .task.task-completed {
+    /* background-color: rgb(29, 222, 83); */
+    color: rgb(29, 222, 83);
+}
+.task-header .task.task-working {
+    color: rgba(217, 230, 30, 0.9);
+}
+.task-header .task.task-pending {
+    /* background-color: rgb(199, 14, 14); */
+       color: rgb(194, 83, 83); 
+}
+
+.task-header .task.active {
+    background-color: #292929;
+}
+
+.task-header .task div:first-child{
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    top: 5%;
+}
+
+.task-header .task div:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+}
+
+.task-header .page-line{
+    display: flex;
+    top: 18.9vh;
+    transition: all 0.2s ease;
+}
+
+.page-main .task-body {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 15px;
+    width: 100%;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 15px;
+    top: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.task-body .task-body-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-body .task-body-header span:nth-child(2){
+    position: relative;
+    width: 50px;
+    height:50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+    color: white;
+    background-color: rgba(250, 235, 215, 0.468);
+    border-radius: 50%;
+}
+
+.task-body .task-body-header span:nth-child(2):hover{
+
+}
+
+.task-body .task-body-header span:nth-child(2)::before{
+    position: absolute;
+    content: "➕";
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: wheat;
+}
+
+.task-body .task-body-header span:nth-child(2):hover::before{
+    content: "➕";
+    background-color: aliceblue;
+    text-shadow:0px 0px 6px #290ed9;
+    background-color: #1249a2bb;
+}
+
+/********************* PENDING TASKS ******************************/
+
+.task-body .task-pending-content {
+    display: flex;
+    align-items: center;
+    padding: 3px 4px;
+    font-size: 13px;
+    column-gap: 10px;
+    background-color: rgba(153, 153, 153, 0.215);
+    border-radius: 5px;
+    font-family: 'Bebas Neue', cursive;
+    min-width: 60px;
+}
+
+.task-body .task-pending-content .select-employe {
+    font-size: 8px;
+    padding: 1px 4px;
+    border-radius: 4px;
+    background-color: rgba(49, 48, 46, 0.882);
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+
+
+.task-body .task-pending-content:hover .select-employe {
+    opacity: 1;
+}
+
+.task-body .task-pending-content .select-employe:hover ,  .task-body .task-pending-content.active .select-employe{
+    background-color: rgb(29, 222, 83);
+    color: black;
+    opacity: 1;
+}
+
+.task-body  .task-content {
+    position: relative;
+    height: 7vh;
+    /* max-height: 7vh; */
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    padding: 3px 5px;
+    background-color: #cbcbcb56;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.task-body  .task-content .image-container{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.task-body  .task-content .image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.task-body  .task-content .task-description span{
+    color: burlywood;
+}
+
+.task-body  .task-content .task-status i  {
+    position: relative;
+    display: block;
+    width: 20px;
+    height:20px;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size:13px;
+    color: black;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+    transition:  all 0.2s ease;
+}
+
+.task-body  .task-content .task-status.completed i{
+    background-color: chartreuse;
+}
+.task-body  .task-content .task-status.loading i{
+    background-color: rgb(210, 201, 34);
+}
+.task-body  .task-content .task-status.task.pending{
+    background-color: rgb(177, 11, 44);
+}
+
+.task-body div:first-child{
+    color: white;
+}
+
+
+/********** Right Content *****/
+
+.details-project {
+    width: 100%;
+    min-height: 400px;
+    background-color: #292929;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.details-project .project-team {
+    background-color: transparent;
+}
+.details-project .details-project-header{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.256);
+    padding: 5px 0px;
+}
+.details-project .details-project-header .commune{
+    color: rgba(255, 255, 255, 0.872);
+}
+.details-project .details-project-header .name {
+    color: #999;
+    font-size: 18px;
+    text-transform: uppercase;
+
+}
+
+.details-project .details-project-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.details-project-body .commune{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.256);
+}
+
+.project-tach .tach-title{
+    position: relative;
+    font-size: 19px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+:root{
+    --logo-size: "";
+ }
+.project-tach .tach-title div:last-child{
+    position: relative;
+    display: flex;
+    width:160px;
+    height:160px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color:  var(--logo-size);
+    border-radius: 50%;
+}
+
+.details-project-body .project-actions .actions {
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: left;
+    column-gap: 10px;
+}
+
+.details-project-body .project-actions .actions span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    padding: 7px 10px;
+    background-color: rgba(127, 255, 212, 0.314);
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Nunito";
+    font-size: 12px;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.details-project-body .project-actions .actions span i {
+    font-size: 11px;
+}
+
+.details-project-body .project-actions .actions .valider {
+    background-color: rgb(6, 170, 53);
+}
+
+.details-project-body .project-actions .actions .valider.validated {
+    background-color: rgb(6, 103, 34);
+    cursor: not-allowed;
+}
+.details-project-body .project-actions .actions .valider.validated:hover {
+    background-color: rgb(3, 58, 19);
+
+}
+
+.details-project-body .project-actions .actions .valider:hover {
+    background-color: rgb(8, 217, 67);
+}
+
+.details-project-body .project-actions .actions .delete {
+    background-color: rgb(177, 11, 44);
+} 
+
+.details-project-body .project-actions .actions .delete:hover {
+    background-color: rgb(209, 10, 50);
+
+}
+
+
+.project-tach .tach-title div:last-child::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+    -webkit-clip-path: circle(59.4% at 45% 45%);
+    clip-path: circle(53.4% at 45% 45%);
+    
+}
+
+
+.details-project-body  .project-team {
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+.category-container {
+    position: relative;
+    width: 150px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: rgba(27, 27, 30, 0.137);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    cursor: pointer;
+}
+
+.category-container.active{
+    background-color: rgb(28, 172, 69);
+}
+
+.category-container .category-name-circle {
+    position: relative;
+    background-color: #1d1d1d;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;     
+    color: wheat;
+    cursor: pointer;
+}
+
+
+.category-container .circle-add:hover {
+    transition: all 0.4s ease;
+    background-color: rgb(28, 172, 69);
+    color: #292929;
+}
+
+.category-container .category-name{
+    color: wheat;
+    font-size: 14px;
+}
+
+.details-project-body  .project-team .team-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: rgba(255, 255, 255, 0.589);
+    padding: 5px;
+    background-color: rgba(153, 153, 153, 0.311);
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.details-project-body  .project-team .team-container  .fa-times {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: wheat;
+    background-color: #180ea8;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;  
+    z-index: 999999999999993838383839111;
+    border-radius: 50%;
+    padding: 2px 2px;
+    top: -10px;
+    left: -10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.details-project-body  .project-team .team-container:hover {
+    background-color: black;;
+    color: white;
+}
+.details-project-body  .project-team .team-container::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid white;
+    -webkit-clip-path: polygon(58% 0, 100% 0, 100% 60%, 67% 60%, 29% 60%, 0% 60%, 0 0);
+    clip-path: polygon(58% 0, 100% 0, 100% 60%, 67% 60%, 29% 60%, 0% 60%, 0 0);
+    z-index: 11 ; 
+}
+
+
+/* .details-project-body  .project-team .team-container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 2px solid blue;
+    z-index: 9;
+  
+} */
+
+.project-team .team-container .image-container{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border : 2px solid rgba(164, 160, 160, 0.701);
+}
+
+.project-team .team-container .image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.title-name{
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #999;
+    width: 100%;
+}
+
+.project-resume .resume {
+    position: relative;
+    color: rgba(255, 255, 255, 0.872) ;
+}
+
+.details-project-body  .project-team .team-container:last-child {
+    padding: 10px 12px;
+}
+
+.details-project-body  .project-team .team-container:last-child i  {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/*************************** RIGHT CONTENT ****************** */
+
+.list-task-working {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 20px;
+    
+}
+
+
+.list-task-working  .task-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    min-width: 150px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;  
+    padding: 5px 0px ;  
+}
+
+.list-task-working  .task-container  .task-image-user-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-task-working  .task-container  .task-image-user-container .image-container {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid rgb(16, 247, 100);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.list-task-working  .task-container  .task-image-user-container .image-container.task-name-container {
+    background-color: #1d1d1d;
+    color: wheat;
+    transform: rotate(-3deg);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    border: none;
+    text-align: center;
+}
+
+.list-task-working  .task-container .task-actions {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0px;
+}
+
+.list-task-working  .task-container .task-actions i {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-weight: 500;
+    line-height: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.list-task-working  .task-container .task-actions .fa-plus {
+    background-color: rgb(16, 247, 100);
+}
+
+
+.list-task-working  .task-container .task-actions .fa-plus:hover {
+    background-color: rgba(16, 247, 101, 0.662);
+}
+
+
+.list-task-working  .task-container .task-actions .fa-times {
+    background-color: rgb(177, 11, 44);
+}
+
+.list-task-working  .task-container .task-actions .fa-times:hover {
+    background-color: rgba(177, 11, 44, 0.697);
+
+}
+
+.list-task-working  .task-container  .task-image-user-container .image-container.task-name-container span {
+    position: relative;
+    line-height: 70px;
+}
+
+.list-task-working  .task-container  .task-image-user-container .image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list-task-working  .task-container .task-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito";
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.list-task-working  .task-container .task-info span:last-child{
+    color: #999;
+    font-size: 14px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    text-transform: lowercase;
+}
+
+.list-task-working  .task-container .task-validate {
+    position: relative;
+    width: 100%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.list-task-working  .task-container .task-validate span {
+    position: relative;
+    padding: 3px 10px;
+    background-color: rgb(16, 247, 100);
+    color: black;
+    border-radius: 5px;
+    font-size: 13px;  
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.list-task-working  .task-container .task-validate i {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 19px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(16, 247, 101, 0.848);
+    font-weight: 600;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.list-task-working  .task-container .task-validate i:hover {
+    background-color: rgba(16, 247, 101, 0.558);
+}
+
+.list-task-working  .task-container .task-validate span:hover{
+    background-color: #1d1d1d;
+    color: rgb(16, 247, 100);
+    border: 1px solid rgb(16, 247, 100);
+}
+
+/* **************** ADD EMPLOYE TO TEAM ************ */
+.page-add-employe-to-team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.page-add-employe-to-team .body1 {
+    position: relative ; 
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -4vh;
+}
+
+.page-add-employe-to-team .body1 input {
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: none;
+    color: wheat;
+    font-size: 11px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+    font-family: "Nunito";
+    width: 50%;
+}
+
+.page-add-employe-to-team .body2{
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+    padding: 10px 30px;
+}
+
+.page-add-employe-to-team .body2 .employe-container {
+    position: relative;
+    min-width: 120px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #292929;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;   
+    padding: 0 5px;
+    row-gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-add-employe-to-team .body2 .employe-container.active{
+    background-color: rgb(28, 172, 69);
+}
+
+.page-add-employe-to-team .body2 .employe-container:hover{
+    background-color: rgba(153, 153, 153, 0.307);
+}
+
+.page-add-employe-to-team .body2 .employe-container .employe-image-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.body2 .employe-container .employe-image-container .employe-image
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.body2 .employe-container .employe-image-container .employe-image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.body2 .employe-container .employe-name {
+    position: relative;
+    font-family: "Nunito";
+    font-size: 12px;
+}
+
+.body2 .employe-container .employe-name span {
+
+    padding: 3px 5px;
+    border-radius: 5px;
+
+}
+
+.page-add-employe-content .footer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    top: 4vh;
+}
+
+.page-add-employe-content .footer  button {
+    position: relative;
+    font-size: 14px;
+    font-family: "Nunito";
+    padding: 7px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;   
+    background-color: rgb(29, 222, 83);
+    color: #292929;
+}
+
+/* **************** EMPTY PROJECT ******************* */
+
+.projects-empty {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+    align-items: center;
+}
+
+.projects-empty .image {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.projects-empty .project-empty-message {
+    padding: 10px 20px; 
+    color: white;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+}
+
+.projects-empty .go-back {
+    position: relative;
+    background-color: #1d1d1d;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;   
+    color: wheat;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.projects-empty .go-back:hover {
+    background-color: antiquewhite;
+    color: #1d1d1d;
+}

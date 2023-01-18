@@ -1,0 +1,159 @@
+.page-login-container {
+    position: relative;
+    width: 100%;
+    min-height: 92vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.page-login-container .page-login-content-container {
+    position: relative;
+    width: 450px;
+    height: 60vh;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgba(244, 239, 239, 0.808);
+}
+
+.page-login-container .page-login-content{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    align-items: top;
+    padding: 0px 20px ;
+    border-radius: 15px;
+    row-gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 999;
+    border: none;
+}
+
+.page-login-content section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-login-content section:first-child{
+    height: 30%;
+}
+
+.page-login-content section:nth-child(2){
+    min-height: 40%;
+}
+
+.page-login-container .page-login-content .login-header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.167);
+}
+
+.login-header h3{
+    font-size: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+    color: rgb(67, 11, 131);
+    font-family: 'Nunito', sans-serif;
+}
+
+.span-color{
+    position: relative;
+    display: flex;
+    left: 3px;
+    color:  rgb(245, 99, 36);
+}
+
+.login-header h3:last-child{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    bottom: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.page-login-content .login-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(153, 153, 153, 0.167);
+}
+
+.page-login-content .login-body span {
+    position: relative;
+    display: flex;
+    justify-content: right;
+    text-decoration: none;
+    color: rgb(67, 11, 131); 
+    font-size: 13px;
+    width: 100%;
+    
+}
+
+.nav-link{
+      color: rgb(67, 11, 131); 
+     font-weight: 500;
+}
+
+
+.page-login-content .login-body input {
+    border: none;
+    background-color: white;
+    padding : 10px 10px;
+    font-size: 13px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: rgba(153, 153, 153, 0.037);
+    color: #999;
+}
+
+.page-login-content .login-footer{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-login-content .login-footer button {
+    width: 100%;
+    background-color: rgb(245, 99, 36);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-body .form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    row-gap: 3px;
+}
+
+.login-body .form-group label{
+    position: relative;
+    font-size: 13px;
+    font-weight: 500;
+    left: 3%;
+    color: rgb(67, 11, 131); 
+
+}
+
+.login-body .form-group .error{
+    font-size: 13px;
+}

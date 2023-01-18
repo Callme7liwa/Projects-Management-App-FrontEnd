@@ -1,0 +1,33 @@
+.affectations-empty  {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.affectations-empty  .image {
+    position: relative;
+    width: 60%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.affectations-empty  .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+}
+
+
+
+.affectations-empty .affectation-message {
+    position: relative;
+    text-align: center;
+    font-family: "Nunito";
+    font-size: 18px;
+}
+

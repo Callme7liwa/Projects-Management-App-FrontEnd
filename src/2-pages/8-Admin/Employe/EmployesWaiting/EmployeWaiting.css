@@ -1,0 +1,114 @@
+.card-employe-waiting-container{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    border: 4px solid #dfdbdb8e;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card-employe-waiting-container .card-employe-waiting-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #292929;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-image-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-image-container .image-container{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgb(1, 255, 22);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-image-container .image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 2px solid green;
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.893);
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-info span:first-child{
+    text-transform: uppercase;
+}
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-info span:nth-child(2){
+    color: #999;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-info span:last-child{
+    color: wheat;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-action{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    min-height: 10vh;
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-action i {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(7, 193, 22);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-action i:hover {
+    background-color: rgb(8, 232, 26);
+
+}
+
+
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-action  .fa-times {
+    background-color: rgb(194, 6, 6);
+}
+
+.card-employe-waiting-container .card-employe-waiting-content .card-employe-action  .fa-times:hover {
+    background-color: rgb(232, 7, 7);
+
+}

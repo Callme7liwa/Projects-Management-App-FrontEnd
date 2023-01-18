@@ -1,0 +1,143 @@
+* {
+    background-color: var(--bg);
+    /* etc. */
+}
+.component-side-bare-container {
+    position :absolute;
+    position: fixed;
+    width: 220px;
+    height: 90vh;
+    padding: 15px;
+    left: -50%;
+    border-radius: 25px;
+    background-color: #292929;
+    font-family: 'Nunito', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.component-side-bare-container.active {
+    left: 2%;
+}
+
+
+.component-side-bare-container .component-side-bare-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.component-side-bare-content ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    row-gap: 1px;
+} 
+
+.component-side-bare-content ul  li.title{
+    font-size: 12px;
+    left: 0;
+    text-transform: uppercase;
+    color: #999;
+    cursor: pointer;
+}
+
+
+.component-side-bare-content ul  li {
+    position: relative;
+    padding: 5px 0px;
+    color: rgba(232, 232, 232, 0.861);
+    font-size: 14px;
+    text-transform: lowercase;
+    cursor: pointer;
+
+
+}
+
+.component-side-bare-content ul .title-items{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    padding-left: 10px;
+    letter-spacing: 0.1px;
+    font-size: 13px;
+    color: #999;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    letter-spacing: 0.5px;
+
+}
+
+.component-side-bare-content ul .title-items .color{
+    position: relative;
+    display: flex;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: blanchedalmond;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.component-side-bare-content ul li:last-child.title-items{
+    color: #1554E8;
+}
+    
+.component-side-bare-content .side-bare-bottom{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    bottom: 0;
+    min-height: 100px;
+    
+}
+
+.side-bare-bottom .side-bare-bottom-title {
+    color: #999;
+}
+
+.side-bare-bottom .side-bare-bottom-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    width: 100%;
+    padding: 10px;
+    background-color: #454444;
+    border-radius: 10px;
+}
+
+.side-bare-bottom-content .subtitle{
+    color: white;
+    font-size: 14px;
+}
+
+.side-bare-bottom-content .description{
+    color: #999;
+    font-size: 12px;
+}
+
+.side-bare-bottom-content .button {
+    height: 30px;
+}
+
+.side-bare-bottom-content .button  button{
+    position: relative;
+    width: 100% ; 
+    max-height: 30px;
+    padding: 5px 0px;
+    border: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 5px;
+}
+

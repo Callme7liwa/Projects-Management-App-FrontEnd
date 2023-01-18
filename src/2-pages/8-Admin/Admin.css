@@ -1,0 +1,349 @@
+:root{
+    --box-shadow-1 :    inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+                        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+                        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    
+
+}
+
+.admin .go-back-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.admin  .go-back {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 19px;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+
+.admin .page-header{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.admin .page-header .pourcentage{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    box-shadow: var(--box-shadow-1);
+    border-radius: 15px; 
+    transition: 0.5s;
+    align-items: center;
+}
+
+.pourcentage .value {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09c6f9;
+    background-image: linear-gradient(315deg, #09c6f9 0%,  #045de9 74%);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border-radius: 15px;
+    font-weight: 600;
+}
+
+.page-header .card-project {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 300px;
+    height: 25vh;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+    background-color: #121415cc;
+    cursor: pointer;
+}
+
+.page-header .card-project  .left {
+    position: relative;
+    width: 120px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-header .card-project .left img {
+    position: relative;
+    width: 12vh;
+    height: 12vh;
+} 
+
+.page-header .card-project .right{
+    position: relative;
+    width: calc(300px - 160px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    color: white;
+    text-transform: uppercase;
+}
+
+.admin .page-main-title
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgba(153, 153, 153, 0.61);
+    font-size: 19px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.page-main-pagination {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    bottom: 0px;
+}
+
+.page-main-pagination .page-number {
+    position: relative;
+    font-size: 13px;
+    padding: 5px 10px;
+    color: white;
+    background-color: #045de9;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.admin .page-main-title .btn-success {
+    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-size: 13px;
+
+}
+
+.admin .page-main-title .btn-success i {
+    font-size: 10px;
+}
+
+/* ********** *   EMPLOYEEES **********************  */
+.page-main-title .actions{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.page-main-title .actions .action  {
+
+}
+
+.page-main-title .actions .action{
+    position: relative;
+    width: 50px;
+    height:50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease ;
+}
+
+.page-main-title .actions .add:hover{
+}
+
+.page-main-title .actions .add:hover::before{
+    content: "➕";
+    background-color: aliceblue;
+    text-shadow:0px 0px 6px #290ed9;
+    background-color: #1249a2bb;
+}
+
+.page-main-title .actions .search:hover::before{
+    content: "";
+    background-color: aliceblue;
+    color: wheat;
+    background-color: #1249a2bb;
+}
+
+.page-main-title .actions span input {
+    position: relative;
+    border:  none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    
+    border-radius: 10px;
+    font-size: 13px;
+    font-family: 'Nunito';
+    right: -1200px;
+    transition: all 0.5s ease;
+}
+
+.page-main-title .actions span:first-child .active{
+    right: 0;
+}
+
+.page-main-title .add::before{
+    position: absolute;
+    content: "➕";
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    width: 40px;
+    height:40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+     border-radius: 50%;
+}
+
+.page-main-title .search::before{
+    position: absolute;
+    content: "";
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    width: 40px;
+    height:40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+     border-radius: 50%;
+}
+
+/* **************** CARD INFO USER  */
+.page-body-info-user {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.page-body-info-user .page-info-body-left{
+    position: relative;
+    width: 200px;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-family: 'Nunito';
+
+}
+
+.page-body-info-user .page-info-body-right{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.page-body-info-user .page-info-body-left .image-container{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+    background-color: #0f0c2943;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   row-gap: 10px;
+}
+
+.page-body-info-user .page-info-body-left .image-container .image-content {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.page-body-info-user .page-info-body-left .image-container .image-content img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-info-body-left .info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    background-color: #0f0c2943;
+    padding: 10px 0px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.page-info-body-left .info span:first-child {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(193, 191, 189);
+    color: #292929;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;    border-radius: 50%;
+    border-radius: 25px;
+}
+
+
+.page-body .page-info-body-right .myskills {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 5px ;
+    row-gap: 3px;
+}
+
+
+.page-body .page-info-body-right .myskills span {
+    position: relative;
+    padding: 3px 5px;
+    font-size: 13px;
+    font-family: "Nunito";
+    background-color: #045de9;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;   
+    color: white;
+}

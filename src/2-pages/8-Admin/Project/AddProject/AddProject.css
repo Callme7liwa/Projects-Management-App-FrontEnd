@@ -1,0 +1,612 @@
+
+.page-add-project-container {
+    top: 0vh;
+}
+
+.pop-up-client-container {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.253);
+    z-index: 99999992;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.page-add-project-content {
+    display: flex;
+    align-items: center;
+}
+
+.page-add-project-content .pop-up-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+}
+
+.page-add-project-content .pop-up-title h4 {
+    letter-spacing: 0px;
+        color: #999;
+}
+
+.page-body-add-project {
+    width: 80%;
+}
+
+.page-body-add-project .form-group {
+    position: relative;
+}
+
+.page-body-add-project .form-group label {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 13px;
+}
+
+.page-body-add-project .form-group  input  {
+    background-color: none;
+    border: none;
+    color: wheat;
+    font-size: 13px;
+    padding: 10px 15px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.page-body-add-project .form-group .result-employes-selected {
+    position: absolute;
+    padding: 3px 2px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    font-size: 11px;
+    background-color: #292929c1;
+    top: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: "Nunito";
+}
+
+.page-body-add-project .form-group .result-employes-selected:hover{
+    background-color: rgba(240, 248, 255, 0.195);
+}
+
+.page-body-add-project .form-group .result-employes-selected span:first-child{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color:red;
+    line-height: 20px;
+    background-color: rgba(33, 238, 95, 0.877);
+    border-radius: 50%;
+    text-align: center;
+    color: black;
+}
+
+.page-body-add-project .form-group .input-client.not-active{
+    pointer-events: none;
+}
+
+.page-add-project-content .form-group .client-selected-container {
+    position: absolute;
+    padding: 3px 5px;
+    border-radius: 5px;
+    color: wheat;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(153, 153, 153, 0.508);
+    left: 6px;
+    z-index: 99999;
+    top: calc(50% - 3px) ;
+    font-family: "Nunito";
+}
+
+.page-add-project-content .form-group .client-selected-container  div:first-child  {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.page-add-project-content .form-group .client-selected-container  div:first-child img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.page-add-project-content .form-group .client-selected-container  div:last-child i:hover{
+    cursor: pointer;
+}
+.page-add-project-content .form-group .client-selected-container  div:last-child i:hover{
+    color: red;
+}
+
+
+
+/***************************************** */
+.pop-up-client-container .pop-up-client-content{
+    position: relative;
+    width: 400px;
+    min-height: 540px;
+    background-color: rgba(244, 244, 244, 0.962);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3px;
+    row-gap: 10px;
+}
+
+.pop-up-client-content .pop-up-title{
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 0.5px solid #2929295b;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.pop-up-title h5 {
+    color: #999;
+}
+
+
+.badg {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    background-color: #292929;
+    clip-path: polygon(43% 0, 63% 0, 100% 28%, 100% 43%);
+    color: beige;
+}
+
+.pop-up-client-content .pop-up-body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 20px;
+    min-height: calc(480px - 12vh);
+    row-gap: 10px;
+}
+
+ .pop-up-body .form-group input
+ {
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: "Nunito";
+    background-color: transparent;
+    font-size: 13px;
+    width: 100%;
+    font-size: 11px;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} 
+
+.pop-up-body .list-clients-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: space-around;
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.list-clients-container .container-name {
+    font-family: 'Nunito', sans-serif;
+    color: #999;
+
+}
+
+
+
+
+
+
+
+
+
+
+/********************************* POP UP *******************************/
+.pop-up-body .list-clients-container .client-item {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    background-color: rgba(23, 24, 24, 0.114);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    row-gap: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.pop-up-body .list-clients-container .client-item.active{
+    background-color: rgba(33, 238, 95, 0.877);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.pop-up-body .list-clients-container .client-item:hover {
+    background-color: rgba(23, 24, 24, 0.411);
+    background-color: rgba(33, 238, 95, 0.877);
+}
+
+.pop-up-body .list-clients-container .client-item .image-container{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pop-up-body .list-clients-container .client-item .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-item .name-client {
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    padding: 2px 4px;
+    background-color: #292929;
+    border-radius: 5px;
+    color: wheat;
+}
+
+.pop-up-body .list-clients-container .client-item.active .name-client{
+    color:white ;
+
+}
+
+.pop-up-client-content  .close-page{
+    left: -15px;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.pop-up-client-content  .close-page:hover{
+    background-color: #292929;
+    color: antiquewhite;
+}
+
+.list-clients-container .client-selected-container {
+    position: relative;
+}
+
+.list-clients-container .client-selected-content{
+    position: relative;
+    width: 30%;
+    padding: 5px 5px;
+    display: flex;
+    column-gap: 10px;
+    column-gap: 5px;
+    font-size: 11px;
+    background-color: rgba(153, 153, 153, 0.504);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.list-clients-container .client-selected-container .client-selected-content div:first-child  {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.list-clients-container .client-selected-container .client-selected-content div:first-child img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+
+.list-clients-container .client-selected-container .client-selected-content div:last-child i:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.pop-up-client-content .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    margin-top: 20px;
+}
+
+.pop-up-client-content .button .btn-choice-team {
+    position: relative;
+    background-color: rgba(33, 238, 95, 0.714);
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: all 0.3s ease;
+}
+
+.pop-up-client-content .button .btn-choice-team:hover{
+    background-color: #292929;
+    color: rgba(33, 238, 95, 0.877);
+}
+
+
+/******************************************/
+
+.pop-body-team .employes{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.employes .form-group  {
+    display: flex;
+    justify-content: center;
+}
+
+.employes .form-group input {
+    width: 80%;
+    background-color: rgba(244, 244, 244, 0.962);
+    color: black;
+
+}
+
+.employes .list-employes {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    height: 250px;
+    row-gap: 5px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 10px 10px;
+}
+
+.list-employes::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+
+.employes {
+    position: relative;
+    color: rgba(70, 68, 68, 0.807);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+
+.employes .employes-selected-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.employes .employes-selected-container .employe-content {
+    position: relative;
+    padding: 2px 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: #29292934;
+    border-radius: 3px;
+    font-size: 11px;
+    column-gap: 2px;
+    text-transform: lowercase;
+}
+
+.employes .employes-selected-container .employe-content .image-container{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+.employes .employes-selected-container .employe-content .image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.employes .employes-selected-container .employe-content div i  {
+    cursor: pointer;
+    transition : all 0.2s ease;
+}
+
+.employes .employes-selected-container .employe-content div i:hover {
+    color: red;
+}
+
+.employes .list-employes .employe-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 10px ;
+    background-color: #29292919;
+    font-size: 10px;
+    column-gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.employes .list-employes .employe-info.active{
+    background-color: rgba(33, 238, 95, 0.877);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.employes .list-employes .employe-info:hover{
+    background-color: #29292961;
+}
+
+.employes .list-employes .employe-info .employe-image-container {
+    position: relative;
+    background-color: aquamarine;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.employes .employe-info .employe-image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 50%;
+    object-fit: cover;
+}
+
+.employes .perso-info {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+.employes .employe-info span:first-child{
+    color: #292929;
+}
+
+.employes .employe-info .function {
+    position: relative;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.employes .employe-info .function span {
+    padding: 3px 4px;
+    border-radius: 3px;
+    background-color: rgba(35, 34, 34, 0.651);
+    color: white;
+}
+
+
+.page-body .submit-add-project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-body .submit-add-project .button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 12px;
+    color: wheat;
+    text-align: center;
+    border: none;
+    width: 50%;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+    background-color: rgba(33, 238, 95, 0.877);
+    color: black;
+}
+
+.form-group textarea{
+    position: relative;
+    color: wheat;
+    border: none;
+    outline: none;
+    font-family: 'Bebas Neue', cursive;
+    background-color: transparent;
+    font-size: 13px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.form-group textarea:focus{
+    background-color: transparent;
+    color: wheat;
+}
+
+/******************* POP ADD TASK **********************/
+
+.pop-up-client-container .pop-up-client-content {
+    min-height: 500px;
+    padding-bottom: 20px;
+}
+
+.task-container.new-project span  , 
+.task-container.new-project i{
+    color: black;
+}
+
+.pop-team .button {
+    position: relative;
+    top: 15px;
+}

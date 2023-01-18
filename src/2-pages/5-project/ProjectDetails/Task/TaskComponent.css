@@ -1,0 +1,153 @@
+.pop-up-select-employe-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: calc(-7vh - 235px - 7vh);
+    background-color: #29292978;
+    left: calc(-245px - 35px - 50px);
+    width: calc(100%  + 552px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content {
+    position: relative;
+    width: 480px;
+    min-height: 500px;
+    background-color: #292929;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .pop-up-header {
+  position: relative;
+  width: 100%;
+  padding: 10px 0px;
+  text-align: center;
+  background-color: rgba(231, 66, 66, 0.64);
+  border-radius: 5px;
+
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .pop-up-header h4 {
+    color: #292929;
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .pop-up-body{
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 10px;
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .pop-up-title{
+    width: 100%;
+    color: #999;
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .employes-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    row-gap: 5px;
+    column-gap: 5px;
+    flex-wrap: wrap;
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .employes-container .employe-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #82838164;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    transition: all 0.2s ease ;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .employes-container .employe-container:hover{
+    background-color: #828381a6;
+
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .employes-container .employe-container.active {
+    background-color: rgba(33, 238, 95, 0.877);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .employes-container .employe-container .image-container{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+.pop-up-select-employe-container .pop-up-select-employe-content .employes-container .employe-container .image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pop-up-select-employe-content .custom-fa {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    background-color: #292929;
+    transition: all 0.3s ease;
+    right: -10px;
+    top: -10px;
+    border-radius: 50%;
+    z-index: 9999;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pop-up-select-employe-content .custom-fa:hover{
+    background-color: rgba(255, 12, 12, 0.941);
+    color: #292929;
+}
+
+.pop-up-select-employe-content .submit-button {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+    font-size: 13px;
+}
+
+.pop-up-select-employe-content .submit-button span{
+    padding:    5px 5px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pop-up-select-employe-content .submit-button .submit {
+    background-color: rgba(33, 238, 95, 0.877);
+}
+
+.pop-up-select-employe-content .submit-button .unsubmit {
+    background-color: rgba(238, 33, 71, 0.877);
+}
